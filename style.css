@@ -1,3 +1,14 @@
 body {
   background-image: url('https://github.com/MemeWeft/logo/blob/main/niek.png');
+
+.background-image {
+  background-image: url('/Users/woute/Downloads/foto.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* 100% van de viewport-hoogte */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 }
