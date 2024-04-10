@@ -1,5 +1,27 @@
 body {
   background-image: url('https://github.com/MemeWeft/logo/blob/main/niek.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* 100% van de viewport-hoogte */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+  .blur-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Aanpassen naar de gewenste vervaagde kleur en dekking */
+    backdrop-filter: blur(10px); /* Pas de vervaging aan zoals gewenst */
+    z-index: -1; /* Plaats het vervaagde element achter de andere inhoud */
+  }
+.navbar {
+background-color: #343a40; /* Donkere achtergrondkleur voor de navigatiebalk */
+}
 
 .background-image {
   background-image: url('/Users/woute/Downloads/foto.jpg');
@@ -10,5 +32,35 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.blur-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* Aanpassen naar de gewenste vervaagde kleur en dekking */
+  backdrop-filter: blur(10px); /* Pas de vervaging aan zoals gewenst */
+  z-index: -1; /* Plaats het vervaagde element achter de andere inhoud */
+  }
+
+.content {
+  /* Voeg aanvullende stijlen toe aan de pagina-inhoud indien nodig */
+  z-index: 1; /* Zorg ervoor dat de inhoud boven het vervaagde element ligt */
+  }
+
+.ms-auto {
+  text-align: right;
+}
+.jumbotron {
+  background-color: transparent;
+}
+.dropdown {
+  background: transparent;
+
+  }
+.dropdown:hover {
+  background: transparent;
 }
 }
